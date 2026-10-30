@@ -8,7 +8,7 @@ public class ProjectEuler {
          if(number % 3==0 || number % 5==0) {
             sum1+=number;
          }
-         number+=1;
+         number++;
       }
       return sum1;
    }
@@ -16,13 +16,13 @@ public class ProjectEuler {
       int term1=1;
       int term2=2;
       int newTerm=0;
-      int sum2=0;
+      int sum2=2;
       while(newTerm<=4000000) {
          newTerm=term1+term2;
          term1=term2;
          term2=newTerm;
          if (newTerm % 2==0) {
-            sum2+=newTerm;
+            sum2+=term2;
          }
       }
       return sum2;
